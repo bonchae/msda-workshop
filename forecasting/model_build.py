@@ -3,6 +3,7 @@ import pickle
 from fbprophet import Prophet
 from fbprophet.serialize import model_to_json
 import xgboost as xgb
+import streamlit as st
 
 from forecasting.utils import Clock
 

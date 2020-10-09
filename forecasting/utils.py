@@ -1,5 +1,6 @@
 import numpy as np
 import time
+import matplotlib.pyplot as plt
 
 
 class Clock:
@@ -21,6 +22,25 @@ def disp(df, lines=5, type='head'):
         print(df.tail(lines))
     else:
         print("Error: Please enter either 'head' or 'tail'.")
+
+
+def display_results(pred_df, pred_col):
+    # Plot results
+    plt.plot(pred_df['y'])
+    plt.plot(pred_df[pred_col], 'r--', alpha=0.8)
+    plt.legend(['Actual', 'Predicted'])
+    plt.title('Ride Austin Forecast')
+    plt.show()
+
+    # Accuracy
+    metrics_dict = {}
+    metrics_dict['mape'] = mean_absolute_percentage_error(pred_df['y'], pred_df[pred_col])
+    metrics_dict['rmse'] = root_mean_squared_error(pred_df['y'], pred_df[pred_col])
+    metrics_dict['mae'] = mean_absolute_error(pred_df['y'], pred_df[pred_col])
+    metrics_dict['mfe'] = mean_forecast_error(pred_df['y'], pred_df[pred_col])
+
+    print(pred_col)
+    print(metrics_dict)
 
 
 def root_mean_squared_error(y_true, y_pred):
