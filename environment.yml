@@ -27,7 +27,7 @@ dependencies:
   - freetype=2.10.2
   - holidays=0.10.3
   - idna=2.8=py37_0
-  - intel-openmp=2019.4=233
+  - intel-openmp=2019.4
   - jmespath=0.9.4=py_0
   - joblib=0.14.1=py_0
   - kiwisolver=1.2.0
@@ -44,9 +44,9 @@ dependencies:
   - libpng=1.6.37
   - llvm-tools=10.0.1
   - lunarcalendar=0.0.9=py_0
-  - matplotlib=3.2.2=0
+  - matplotlib=3.2.2
   - matplotlib-base=3.2.2
-  - mkl=2019.4=233
+  - mkl=2019.4
   - mkl-service=2.3.0
   - mkl_fft=1.0.15
   - mkl_random=1.1.0
