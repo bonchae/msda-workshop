@@ -68,8 +68,37 @@ A few more notes on Binder:
     * Your next Binder session will now build using the updated Jupyter notebook
 
 ### Project Overview
-#### Lower header
-In this workshop, we will use RideAustin data from 2016-2017 to build two models and forecast future values.  The raw data is saved in three CSV files, called Rides_DataA, Rides_DataB, and Weather_Data.  In order to simulate a typical data science workflow, I used SQLite to combine the three files into a single database file, called msda_workshop.  The msda_workshop
+
+#### Step 1: Importing Data
+In this workshop, we will use RideAustin data from 2016-2017 to build two models and forecast future values.  The raw data is saved in three CSV files, called Rides_DataA, Rides_DataB, and Weather_Data.  In order to simulate a typical data science workflow, I used SQLite to combine the three files into a single database file, called msda_workshop.  The msda_workshop database contains three tables with the same three names.  The first step of the project is to use SQLite's Python API to load this data into Pandas dataframes for inspection.  As we learn more about the data and refine our goals, we will edit this SQL code to manipulate and restructure the data.
+
+#### Step 2: Preprocessing
+As we explore the data, we'll collect a series of preprocessing steps that must be used to clean or reorganize our data.  This may also include some feature engineering, where additional features are generated from existing data.  Those steps will be refined and then combined into a single preprocessing function to convert our messy data into clean data.
+
+#### Step 3: Model Testing
+After preprocessing our data, we can experiment with a couple forecasting models.  With a time series project like this, typical cross validation methods are not available to us.  Instead, to evaluate the models' performance, we will use "Walk Forward Evaluation".  The Jupyter notebook contains some pre-built functions to streamline this process.  Here are some more details about the two models used here:
+* Prophet ([documentation](https://facebook.github.io/prophet/))
+  * Developed by Facebook to forecast internal metrics
+  * Based on Time Series Decomposition model
+  * Pros:
+    * Very user-friendly
+    * Great built-in output
+    * Built specifically for time series forecasting
+  * Cons:
+    * Not very flexible
+    * Performance may struggle when adding external regressors
+* XGBoost ([documentation](https://xgboost.readthedocs.io/en/latest/))
+  * Developed as research project, rose to prominence after winning multiple machine learning competitions
+  * Based on Decision Trees
+  * Pros:
+    * Very fast
+    * Highly tunable and applicable to many types of problems
+    * Available in any platform
+  * Cons:
+    * Hyperparameters and underlying math are daunting
+    * Any desired output must be custom-built
+
+
 
 
 
