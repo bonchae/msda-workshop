@@ -104,6 +104,34 @@ The final step is to put the pieces together into a single chunk of executable c
 * Send forecast data to API (to integrate with some other service)
 * Create visualization of results (with dashboarding tool or web app)
 
+## Forecasting Package
+
+### Package Overview
+
+* **__init__.py**
+  * This file is empty, but it allows "forecasting" to be run as a Python _package_.  More explanation below in "How to Run Forecasting Package".
+* **utils.py**
+  * This file contains _utility functions_, which make the rest of the code easier to work with.
+* **config.py**
+  * This file contains any configuration settings, like filepaths for data exports and database credentials.
+* **queries.py**
+  * This file contains any query functions, which connect to a database and return the desired data.
+* **preprocessing.py**
+  * This file contains preprocessing functions, which clean and transform the data into our desired format.
+* **model_build.py**
+  * This file contains the model build functions, which fit our specified models to the data and save the results.
+* **forecasting.py**
+  * This file contains functions which load our saved models and fit them to future data.
+* **run_forecaster.py**
+  * This is our _main_ file, which imports and runs all the other modules in our package.  It's like our forecasting control center, and this is the file we'll actually execute when we want to run the package.
+* **app.py**
+  * This is the only file that isn't executed by run_forecaster.py.  When we run this file through Streamlit, it will import the latest forecast data and launch a simple web app to display our forecast accuracy.
+
+### How to Run Forecasting Package
+
+
+
+
 
 
 
