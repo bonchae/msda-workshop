@@ -76,7 +76,7 @@ In this workshop, we will use RideAustin data from 2016-2017 to build two models
 As we explore the data, we'll collect a series of preprocessing steps that must be used to clean or reorganize our data.  This may also include some feature engineering, where additional features are generated from existing data.  Those steps will be refined and then combined into a single preprocessing function to convert our messy data into clean data.
 
 #### Step 3: Model Testing
-After preprocessing our data, we can experiment with a couple forecasting models.  With a time series project like this, typical cross validation methods are not available to us.  Instead, to evaluate the models' performance, we will use "Walk Forward Evaluation".  The Jupyter notebook contains some pre-built functions to streamline this process.  Here are some more details about the two models used here:
+After preprocessing our data, we can experiment with a couple forecasting models.  With a time series project like this, typical cross validation methods are not available to us.  Instead, to evaluate the models' performance, we will use "Walk Forward Evaluation".  The Jupyter notebook contains some pre-built functions to streamline this process.  Here are some more details about the two models we will use here:
 * Prophet ([documentation](https://facebook.github.io/prophet/))
   * Developed by Facebook to forecast internal metrics
   * Based on Time Series Decomposition model
@@ -108,7 +108,7 @@ The final step is to put the pieces together into a single chunk of executable c
 
 ### Package Overview
 
-* **__init__.py**
+* **\__init\__.py**
   * This file is empty, but it allows "forecasting" to be run as a Python _package_.  More explanation below in "How to Run Forecasting Package".
 * **utils.py**
   * This file contains _utility functions_, which make the rest of the code easier to work with.
