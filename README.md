@@ -34,7 +34,7 @@ In order to use this repository and/or follow along during the workshop, follow 
 * Install Anaconda ([instructions](https://docs.anaconda.com/anaconda/install/))
   * Alternative: Miniconda, a minimal installation of Anaconda ([instructions](https://docs.conda.io/en/latest/miniconda.html))
 * Verify installation (`conda list`)
-  * Create conda virtual environment using provided configuration file
+* Create conda virtual environment using provided configuration file
   * Navigate to your repo's directory (ex. `cd Documents/Dev/msda-workshop`)
   * Create environment (`conda env create --file environment.yml`)
   * Verify environment creation (`conda env list`)
