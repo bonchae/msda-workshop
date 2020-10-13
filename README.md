@@ -109,7 +109,7 @@ The final step is to put the pieces together into a single chunk of executable c
 ### Package Overview
 The files are structured as a _package_ so that one module can import other modules.  This is a much cleaner solution than including all our Python code in a single script, and it allows for easier debugging when problems inevitably arise.
 * **\_\_init\_\_.py**
-  * This file is empty, but it allows our code to be run as a Python _package_.  More explanation below in "How to Run Forecasting Package".
+  * This file is empty, but it allows our code to be run as a Python package.  More explanation below in "How to Run Forecasting Package".
 * **utils.py**
   * This file contains _utility functions_, which make the rest of the code easier to work with.
 * **config.py**
@@ -143,11 +143,11 @@ The files are structured as a _package_ so that one module can import other modu
 
 3. To run the forecasting package, type `python -m forecasting.run_forecaster` and hit Enter/Return.  The execution time will depend on your specific machine (mine takes around 30-40 seconds).  While this package is accomplishing quite a bit, there's not much to see here (that's what the web app is for).
 
-4. To launch the Streamlit web app, type `streamlit run forecasting/app.py`.  By default, the app will show performance metrics and a forecast plot for each of the two models.  Additionally, you may view the raw forecast data by clicking a checkbox.
+4. To launch the Streamlit web app, type `streamlit run forecasting/app.py`.  By default, the app will show performance metrics and a forecast plot for each of the two models.  Additionally, you may view the raw forecast data by clicking the checkbox.
 
 
 ## Additional Ideas
-The goals of this workshop go beyond the single live session.  I wanted to walk through a typical project workflow to demonstrate some potentially new techniques and explain a Data Scientist's thought process.  However, I also wanted to provide a launching pad for your own forecasting project, which would give you invaluable hands-on experience and a code repository to show off throughout your job search.  While you can't copy this repo and claim it as your work, I've provided some ideas below for how you can make it your own:
+The goals of this workshop go beyond the single live session.  I did want to walk through a typical project workflow to demonstrate some potentially new techniques and explain a Data Scientist's thought process; however, I also wanted to provide a launching pad for your own forecasting project, which would give you invaluable hands-on experience and a code repository to show off throughout your job search.  Since you can't copy this repo and claim it as your work, I've provided some ideas below for how you can make it your own:
 * **Different Target Variable**: Pick a different field from the raw data to use as your target to forecast.
 * **Forecast Per Car Category**: Expand the current functionality to forecast for each car_category and store/display the results.
 * **Change Goals**: Think of a new business goal for forecasting this data and modify the code to achieve it.
