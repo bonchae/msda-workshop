@@ -30,6 +30,7 @@ In order to use this repository and/or follow along during the workshop, follow 
 
 **OPTIONAL**, if you'd like to edit or run the forecasting package
 * Clone your new repo to your machine ([instructions](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository))
+  * In case you need to work with git-lfs (large file storage): documentation [here](https://git-lfs.github.com/) and [here](https://medium.com/@pavanskipo/how-to-use-git-lfs-large-file-storage-to-push-large-files-to-github-41c8db1e2d65)
 * Install Anaconda ([instructions](https://docs.anaconda.com/anaconda/install/))
   * Alternative: Miniconda, a minimal installation of Anaconda ([instructions](https://docs.conda.io/en/latest/miniconda.html))
 * Verify installation (`conda list`)
@@ -40,7 +41,25 @@ In order to use this repository and/or follow along during the workshop, follow 
 * Activate conda environment (`conda activate msda`)
 
 
+## Workshop
 
-
+### Working with Jupyter Notebook
+If you cloned this repo to your machine, then you can open the "Forecasting - Workshop" notebook via the normal Jupyter workflow ([documentation here](https://jupyter.org/install)).  However, I have also made it available to the more casual attendee through a tool called [Binder](https://mybinder.readthedocs.io/en/latest/index.html).  Binder allows us to start a Jupyter environment directly from a GitHub repository, treating the repo like a normal file directory.  The package dependencies are all managed via the environment.yml file stored here, and any data files in this repository can be imported into Python.  To launch your Binder session, click the button below:
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zbutton314/msda-workshop/master)
+
+A few more notes on Binder:
+* If the above button fails for you, try visiting https://mybinder.org/ instead:
+  * Enter https://github.com/zbutton314/msda-workshop into the "GitHub repository name or URL" field
+  * Click "Launch"
+* Binder is hosted securely in the cloud - this makes it possible for several people to easily launch their own Binder sessions from the same repo, but it does have a few implications:
+  * We are limited to about 2GB of memory, so we must be careful about the data we generate
+  * We are not able to scale the computational power at our disposal
+  * 
+
+
+
+
+
+
+
