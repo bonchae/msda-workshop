@@ -55,7 +55,7 @@ A few more notes on Binder:
 * Binder is hosted securely in the cloud - this makes it possible for several people to easily launch their own Binder sessions from the same repo, but it does have a few implications:
   * It may take upwards of 10-15 minutes to build your session for the first time (subsequent Binder launches are very quick)
   * We are limited to about 2GB of memory, so we must be careful about the data we generate
-  * We are not able to scale the computational power at our disposal
+  * We have a constant amount of computational power at our disposal (not scalable)
   * Binder may shut down your session after ~10 minutes of inactivity
   * Any changes made during a Binder session will NOT be saved back to the original file
 * Therefore, some best practices:
