@@ -157,4 +157,4 @@ The goals of this workshop go beyond the single live session.  I did want to wal
 * **Different Models**: Experiment with model types other than Prophet and XGBoost to see if you can beat the existing forecast performance.
 * **Web App**: Embellish the web app with additional features (plots/data, filters, buttons, etc) or aesthetics (formatting, design).
 
-Better yet, create your own project from scratch!  You can follow the same steps outlined in this workshop.  Find publicly available data online, develop some business requirement ideas, explore with SQL and Python, start building some models, and store it all in your version controlled GitHub repo.
+Better yet, create your own project from scratch!  You can follow the same steps outlined in this workshop.  Find publicly available data online, develop some business requirement ideas, explore with SQL and Python, start building some models, and store it all safely in your version-controlled GitHub repo.
