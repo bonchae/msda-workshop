@@ -15,6 +15,22 @@ This repository contains all the files you'll need for the workshop, including t
 * Configuration file - ensures that all necessary Python packages are installed correctly
 * Forecasting package - the workshop's final product
 
+### System Setup
+In order to use this repository and/or follow along during the workshop, follow these setup steps:
+* Gain basic familiarity with terminal/command line interface
+  * Default is Terminal on macOS and cmd on Windows, feel free to install an alternative (I use iTerm2 on macOS Catalina)
+  * Example, navigate to some directory from root: `cd Documents/Dev/msda-workshop/examples`
+  * Example, navigate UP one folder level: `cd ..`
+  * Example, list files in current directory: `ls`
+  * Example, execute Python file: `python examples/hello_world.py`
+* Create a free GitHub account
+* Install git on your machine ([instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
+* Fork this repo into your account ([instructions](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo))
+
+OPTIONAL, if you'd like to edit or run the forecasting package
+* Clone your new repo to your machine ([instructions](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/cloning-a-repository))
+* Install Anaconda ([instructions](https://docs.anaconda.com/anaconda/install/))
+  * Alternatively, you can try Miniconda, a minimal, streamlined installation of Anaconda ([instructions](https://docs.conda.io/en/latest/miniconda.html))
 
 
 
