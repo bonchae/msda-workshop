@@ -98,8 +98,11 @@ After preprocessing our data, we can experiment with a couple forecasting models
     * Hyperparameters and underlying math are daunting
     * Any desired output must be custom-built
 
-
-
+#### Step 4: Code Cleanup
+The final step is to put the pieces together into a single chunk of executable code.  My preference is to construct this in Jupyter, using separate cells for each step of the process (configuration, data import, preprocessing, model training, forecasting, etc.) This will make it easier to write our Python package later.  During this process, we will convert our model testing code into streamlined model build and forecasting code, and we will decide how to save all resulting data and display our results.  Note that this step is highly dependent on how our model will be used in a production environment, which is ultimately decided by the business requirements.  Here are a few common methods:
+* Store forecast data (to database or text files)
+* Send forecast data to API (to integrate with some other service)
+* Create visualization of results (with dashboarding tool or web app)
 
 
 
