@@ -19,11 +19,11 @@ This repository contains all the files you'll need for the workshop, including t
 In order to use this repository and/or follow along during the workshop, follow these setup steps:
 * Gain basic familiarity with terminal/command line interface
   * Default is Terminal on macOS and cmd on Windows - feel free to install an alternative
-   * My choice: iTerm2 on macOS Catalina
-  * Example, navigate to some directory from root: `cd Documents/Dev/msda-workshop/examples`
-  * Example, navigate UP one folder level: `cd ..`
-  * Example, list files in current directory: `ls`
-  * Example, execute Python file: `python examples/hello_world.py`
+    * My choice: iTerm2 on macOS Catalina
+  * Ex. Navigate to some directory from root: `cd Documents/Dev/msda-workshop/examples`
+  * Ex. Navigate UP one folder level: `cd ..`
+  * Ex. List files in current directory: `ls`
+  * Ex. Execute Python file: `python examples/hello_world.py`
 * Create a free GitHub account
 * Install git on your machine ([instructions](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))
 * Fork this repo into your account ([instructions](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo))
