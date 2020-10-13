@@ -108,7 +108,7 @@ The final step is to put the pieces together into a single chunk of executable c
 
 ### Package Overview
 
-* **\__init\__.py**
+* **\_\_init\_\_.py**
   * This file is empty, but it allows "forecasting" to be run as a Python _package_.  More explanation below in "How to Run Forecasting Package".
 * **utils.py**
   * This file contains _utility functions_, which make the rest of the code easier to work with.
