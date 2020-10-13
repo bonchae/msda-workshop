@@ -53,9 +53,19 @@ A few more notes on Binder:
   * Enter https://github.com/zbutton314/msda-workshop into the "GitHub repository name or URL" field
   * Click "Launch"
 * Binder is hosted securely in the cloud - this makes it possible for several people to easily launch their own Binder sessions from the same repo, but it does have a few implications:
+  * It may take upwards of 10-15 minutes to build your session for the first time (subsequent Binder launches are very quick)
   * We are limited to about 2GB of memory, so we must be careful about the data we generate
   * We are not able to scale the computational power at our disposal
-  * 
+  * Binder may shut down your session after ~10 minutes of inactivity
+  * Any changes made during a Binder session will NOT be saved back to the original file
+* Therefore, some best practices:
+  * Make sure to continually interact with your Jupyter notebook to keep the session live, if you are making any changes
+  * Periodically download your Jupyter notebook: File -> Download as -> Notebook (.ipynb)
+  * To make your changes available in a future Binder session:
+    * Download the notebook
+    * Copy the notebook into your local repository (delete the old notebook and rename the file, if necessary)
+    * Commit and push this change to the remote repository on GitHub
+    * Your next Binder session will now build using the updated Jupyter notebook
 
 
 
