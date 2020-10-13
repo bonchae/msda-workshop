@@ -128,7 +128,8 @@ The final step is to put the pieces together into a single chunk of executable c
   * This is the only file that isn't executed by run_forecaster.py.  When we run this file through Streamlit, it will import the latest forecast data and launch a simple web app to display our forecast accuracy.
 
 ### How to Run Forecasting Package
-1. In order to run the package, you must use the msda conda virtual environment, created via the provided environment.yml file (instructions above in "System Setup").  In addition, navigate to the directory that contains your cloned repo.  Your terminal prompt must show something like this: `(msda) zach.button@x86_64-apple-darwin13 msda-workshop %`
+1. In order to run the package, you must use the msda conda virtual environment, created via the provided environment.yml file (instructions above in "System Setup").  In addition, navigate to the directory that contains your cloned repo.  Your terminal prompt must show something like this: 
+  `(msda) zach.button@x86_64-apple-darwin13 msda-workshop %`
     * `(msda)` means that I am inside the activated conda environment.  If your prompt shows `(base)` or something else, run `conda activate msda`.
     * `msda-workshop %` means that my current working directory is msda-workshop, where I cloned the repo.  If your working directory does not match your repo location, use `cd file/path` to navigate to the correct folder.
   
