@@ -67,7 +67,9 @@ A few more notes on Binder:
     * Commit and push this change to the remote repository on GitHub
     * Your next Binder session will now build using the updated Jupyter notebook
 
-
+### Project Overview
+#### Lower header
+In this workshop, we will use RideAustin data from 2016-2017 to build two models and forecast future values.  The raw data is saved in three CSV files, called Rides_DataA, Rides_DataB, and Weather_Data.  In order to simulate a typical data science workflow, I used SQLite to combine the three files into a single database file, called msda_workshop.  The msda_workshop
 
 
 
