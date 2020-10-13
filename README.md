@@ -107,7 +107,7 @@ The final step is to put the pieces together into a single chunk of executable c
 ## Forecasting Package
 
 ### Package Overview
-
+The files are structured as a _package_ so that one module can import other modules.  This is a much cleaner solution than including all our Python code in a single script, and it allows for easier debugging when problems inevitably arise.
 * **\_\_init\_\_.py**
   * This file is empty, but it allows our code to be run as a Python _package_.  More explanation below in "How to Run Forecasting Package".
 * **utils.py**
@@ -141,7 +141,7 @@ The final step is to put the pieces together into a single chunk of executable c
     * Python Script: Type `python examples/hello_world.py` and hit Enter/Return to run the hello_world script.  This should print `Hello world!` to your terminal.
     * Streamlit App: Type `streamlit run examples/uber_pickups.py` and hit Enter/Return to run the example Uber web app, provided through Streamlit documentation.  This should open an interactive web app in your browser, showing Uber ride data.  Use Ctrl+Z in the terminal to exit back to the prompt.
 
-3. To run the forecasting package, type `python -m forecasting.run_forecaster` and hit Enter/Return.  The files are structured as a _package_ (and therefore must be executed this way) so that one module can import other modules.  This is a much cleaner solution than including all our Python code in a single script.  The execution time will depend on your specific machine (mine takes around 30-40 seconds).  While this package is accomplishing quite a bit, there's not much to see here (that's what the web app is for).
+3. To run the forecasting package, type `python -m forecasting.run_forecaster` and hit Enter/Return.  The execution time will depend on your specific machine (mine takes around 30-40 seconds).  While this package is accomplishing quite a bit, there's not much to see here (that's what the web app is for).
 
 4. To launch the Streamlit web app, type `streamlit run forecasting/app.py`.  By default, the app will show performance metrics and a forecast plot for each of the two models.  Additionally, you may view the raw forecast data by clicking a checkbox.
 
