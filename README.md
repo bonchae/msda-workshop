@@ -145,10 +145,15 @@ The final step is to put the pieces together into a single chunk of executable c
 4. To launch the Streamlit web app, type `streamlit run forecasting/app.py`.  By default, the app will show performance metrics and a forecast plot for each of the two models.  Additionally, you may view the raw forecast data by clicking a checkbox.
 
 
+## Additional Ideas
+The goals of this workshop go beyond the single live session.  I wanted to walk through a typical project workflow to demonstrate some potentially new techniques and explain a Data Scientist's thought process.  However, I also wanted to provide a launching pad for your own forecasting project, which would give you invaluable hands-on experience and a code repository to show off throughout your job search.  While you can't copy this repo and claim it as your work, I've provided some ideas below for how you can make it your own:
+* **Different Target Variable**: Pick a different field from the raw data to use as your target to forecast.
+* **Forecast Per Car Category**: Expand the current functionality to forecast for each car_category and store/display the results.
+* **Change Goals**: Think of a new business goal for forecasting this data and modify the code to achieve it.
+* **Model Tuning**: Spend some time researching the two models and then build a Grid Search or Cross Validation system to fine-tune their hyperparameters.
+* **Feature Engineering**: Apply more robust feature engineering, using lags, differences, and rolling window functions on the various data features and evaluating their impact on the models.
+* **Code Best Practices**: Exercise some coding best practices by adding logging, function documentation, and error handling to the existing code.
+* **Different Models**: Experiment with model types other than Prophet and XGBoost to see if you can beat the existing forecast performance.
+* **Web App**: Embellish the web app with additional features (plots/data, filters, buttons, etc) or aesthetics (formatting, design).
 
-
-
-
-
-
-
+Better yet, create your own project from scratch!  You can follow the same steps outlined in this workshop.  Find publicly available data online, develop some business requirement ideas, explore with SQL and Python, start building some models, and store it all in your version controlled GitHub repo.
