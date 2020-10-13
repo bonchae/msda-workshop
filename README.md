@@ -129,16 +129,16 @@ The final step is to put the pieces together into a single chunk of executable c
 
 ### How to Run Forecasting Package
 1. In order to run the package, you must use the msda conda virtual environment, created via the provided environment.yml file (instructions above in "System Setup").  In addition, navigate to the directory that contains your cloned repo.  Your terminal prompt must show something like this: `(msda) zach.button@x86_64-apple-darwin13 msda-workshop %`
-  * `(msda)` means that I am inside the activated conda environment.  If your prompt shows `(base)` or something else, run `conda activate msda`.
-  * `msda-workshop %` means that my current working directory is msda-workshop, where I cloned the repo.  If your working directory does not match your repo location, use `cd file/path` to navigate to the correct folder.
+    * `(msda)` means that I am inside the activated conda environment.  If your prompt shows `(base)` or something else, run `conda activate msda`.
+    * `msda-workshop %` means that my current working directory is msda-workshop, where I cloned the repo.  If your working directory does not match your repo location, use `cd file/path` to navigate to the correct folder.
   
 2. From here, you should be able to use the Python interpreter, execute Python scripts, and run Streamlit apps.
-  * Python Interpreter: Type `python` and hit Enter/Return to start the interpreter.  This Python shell accepts normal Python commands and package imports, useful for testing small bits of functionality.  There are multiple ways to exit the Python interpreter, depending on your system:
-    * Ctrl+Z
-    * Ctrl+D
-    * `exit()`
-  * Python Script: Type `python examples/hello_world.py` and hit Enter/Return to run the hello_world script.  This should print "Hello world!" to your terminal.
-  * Streamlit App: Type `streamlit run examples/uber_pickups.py` and hit Enter/Return to run the example Uber web app, provided through Streamlit documentation.  This should open an interactive web app in your browser, showing Uber ride data.  Use Ctrl+Z in the terminal to exit back to the prompt.
+    * Python Interpreter: Type `python` and hit Enter/Return to start the interpreter.  This Python shell accepts normal Python commands and package imports, useful for testing small bits of functionality.  There are multiple ways to exit the Python interpreter, depending on your system:
+      * Ctrl+Z
+      * Ctrl+D
+      * `exit()`
+    * Python Script: Type `python examples/hello_world.py` and hit Enter/Return to run the hello_world script.  This should print "Hello world!" to your terminal.
+    * Streamlit App: Type `streamlit run examples/uber_pickups.py` and hit Enter/Return to run the example Uber web app, provided through Streamlit documentation.  This should open an interactive web app in your browser, showing Uber ride data.  Use Ctrl+Z in the terminal to exit back to the prompt.
 
 3. To run the forecasting package, type `python -m forecasting.run_forecaster` and hit Enter/Return.  The files are structured as a _package_ (and therefore must be executed this way) so that one module can import other modules.  This is a much cleaner solution than including all our Python code in a single script.  The execution time will depend on your specific machine (mine takes around 30-40 seconds).  While this package is accomplishing quite a bit, there's not much to see here (that's what the web app is for).
 
