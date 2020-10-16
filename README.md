@@ -6,3 +6,8 @@ This repository contains all the files you'll need for the workshop, including t
 * Data files - will be processed and used for forecasting
 * Configuration file - ensures that all necessary Python packages are installed correctly
 * Forecasting package - the workshop's final product
+
+
+### Launch Binder
+More information in the Wiki.
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/zbutton314/msda-workshop/master)
